@@ -1,21 +1,9 @@
-let who = prompt("Who is there?")
-
-if (who === "Admin") {
-      var login = prompt("Password")
-}
-else if (who === null) {
-      alert("Canceled")
-}
-else {
-      alert("I don't know you.")
-}
-
-if (login === "Password") {
-      alert("Welcome!")
-}
-else if (login === null) {
-      alert("Cancelled")
-}
-else {
-      alert("Wrong Password.")
-}
+function lastLetter(str) {
+      return str[str.length - 1];
+  }
+  
+  console.log(lastLetter("abcd"));    // Output: "d"
+  console.log(lastLetter("helloa"));   // Output: "o"
+  console.log(lastLetter("world"));   // Output: "d"
+  console.log(lastLetter(""));        // Output: ""
+  
